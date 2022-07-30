@@ -9,7 +9,6 @@ if (month == 12) and (date >= 22):
         print("Seu signo é Capricórnio")
 
 
-
 else:  
     if(month == 1) and (date >= 21):
         if(month == 2) and (date <= 18):
@@ -62,26 +61,4 @@ else:
     elif(month == 11) and (date >= 22):
         if(month == 12) and (date <= 21):
             print("Seu signo é sargitário")
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
 
