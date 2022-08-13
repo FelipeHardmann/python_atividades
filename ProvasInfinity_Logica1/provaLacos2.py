@@ -27,3 +27,8 @@ while totalPessoas < 15:
         
     
 print(f'Existem {crianca} crianças, {adolescente} entre 16 e 30, {semiAdulto} entre 31 e 45, {adulto} entre 46 e 60 e {idoso} maior do que 60')
+print(f'A porcentagem total de crianças é de {(crianca * 100) / totalPessoas:2f}%')
+print(f'A porcentagem total entre 16 e 30 é de {(adolescente * 100) / totalPessoas:2f}%')
+print(f'A porcentagem total de crianças é de {(semiAdulto * 100) / totalPessoas:2f}%')
+print(f'A porcentagem total de crianças é de {(adulto * 100) / totalPessoas:2f}%')
+print(f'A porcentagem total de crianças é de {(idoso * 100) / totalPessoas:2f}%')
