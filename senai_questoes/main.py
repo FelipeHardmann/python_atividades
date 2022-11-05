@@ -121,3 +121,10 @@ def loja_tintas():
     print(f'A quantidade de latas será de: {lata_tinta:.2f}')
     print(f'O valor gasto será de: {valor_total:.2f}')
     print(f'A quantidade de latas de tinta será: {quantidade_latas :.2f}')
+    
+def calcularVelocidadeNet():
+    arquivo = input('Informe o tamanho do arquivo para donwload (em MB): ')
+    velocidade = input('Informe a velocidade de sua internet (em MBPS): ')
+    tempo = arquivo / velocidade
+    minuto = tempo / 60.0
+    print(f'O tempo é de: {minuto} minutos')
