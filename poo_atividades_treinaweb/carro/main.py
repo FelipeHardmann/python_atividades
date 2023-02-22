@@ -9,6 +9,16 @@ unozinho.acelerar(50)
 
 unozinho.qtd_combustivel = 200
 print(unozinho.__dict__)
+
+moto = Moto('preta', 'flex', 200, 2)
+# moto.abastecer(60)
+# moto.abastecer(30)
+# print(moto.__dict__)
+
+if isinstance(moto, Veiculo):
+    print('A classe é um veículo')
+else:
+    print('A class não é')
 # print(Carro.mro())
 
 # veiculo = Veiculo('Azul', 'flex', 200)
@@ -25,10 +35,6 @@ print(unozinho.__dict__)
 # xr.ligar()
 # print(xr.acelerar(50))
 
-# moto = Moto('preta', 'flex', 200, 2)
-# moto.abastecer(60)
-# moto.abastecer(30)
-# print(moto.__dict__)
 
 # print(unozinho.__dict__)
 # print(xr.__dict__)

@@ -1,8 +1,10 @@
 from abc import ABC, abstractmethod
+from Interface_veiculo import InterfaceVeiculo
 
-class Veiculo(ABC):
+class Veiculo(InterfaceVeiculo ,ABC):
     '''
     Classe pai que recebe os atributos principais
+    E extends a classe InterfaceVeiculo
     '''
     def __init__(self, cor: str, tipo_combustivel: str, potencia: int) -> None:
         self._cor = cor
@@ -30,11 +32,9 @@ class Veiculo(ABC):
     def cor(self):
         return self.__cor
 
-    @abstractmethod
     def nova_cor(self, nova_cor):
         self.__cor = nova_cor
 
-    @abstractmethod
     def ligar(self):
         '''método para ligar o veículo'''
         if not self.is_ligado:
@@ -42,14 +42,12 @@ class Veiculo(ABC):
             return f'{__class__.__name__} ligado'
         return 'Veiculo já ta ligado'
 
-    @abstractmethod    
     def desligar(self):
         '''Método para desligar o véiculo'''
         if self.is_ligado:
             self.is_ligado = False
         return 'O veiculo já está desligado'
 
-    @abstractmethod    
     def acelerar(self, velocidade = 10):
         '''Método para acelerar o veículo'''
         if not self.is_ligado:

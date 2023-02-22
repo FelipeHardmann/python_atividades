@@ -28,3 +28,6 @@ class Carro(Veiculo):
     def abastecer(self, qtd_abastecer):
         self.qtd_combustivel += qtd_abastecer
         return f'O método foi chamado a partir da classe carro' 
+
+    def nova_cor(self, nova_cor):
+        self.cor = nova_cor

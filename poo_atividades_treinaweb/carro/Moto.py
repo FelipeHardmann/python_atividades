@@ -37,3 +37,6 @@ class Moto(Veiculo):
             return f'O veiculo está desligado, ligue ele para poder acelerar'
         self.velocidade += velocidade
         return f'O veiculo está acelerando com {self.velocidade}'
+
+    def nova_cor(self, nova_cor):
+        self.cor = nova_cor
