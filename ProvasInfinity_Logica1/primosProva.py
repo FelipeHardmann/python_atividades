@@ -1,11 +1,11 @@
-inicio = int(input('Digite o número inicial: '))
-final = int(input('Digite o número final: '))
+inicio = int(input('Numero 1: '))
+final = int(input('Numero final: '))
 
-for num in range(inicio, final + 1):
-    if num == 1:
+for i in range(inicio, final):
+    if i == 1:
         continue
-    for numero in range(2, num):
-        if num % numero == 0:
+    for num in range(2, i):
+        if i % num == 0:
             break
     else:
-        print(num, end=' ')
+        print(i, end=' ')
